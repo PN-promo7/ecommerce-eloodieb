@@ -1,0 +1,157 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+h1{
+  font-size: 30px;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 12px;
+}
+
+
+#logo {
+  height: 100px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.leaf-right, .leaf-left{
+  display: none;
+}
+
+/* Menu */
+.main-navigation .nav-links:first-of-type{
+  display:none;
+}
+
+.toggle-menu {
+  display : block
+}
+
+/* Footer */
+.logofooter {
+    top: -7%;
+    left: 38%;
+}
+
+footer .container{
+  align-items: stretch;
+}
+
+footer .d-flex:nth-child(2n) {
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.newsletter {
+  margin-top: 55px;
+  margin-bottom: 5px;
+  width : 90%;
+}
+
+footer .container .d-flex:first-child {
+  margin-left: 10px;
+}
+
+footer ul{
+  font-size: 12px;
+  margin: 14px;
+  padding: 0;
+  width: calc(100% /3);
+}
+
+/* Header */
+header{
+  padding : 0;
+}
+
+header p {
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+header br{
+  display: none;
+}
+
+/* Catégories */
+.category{
+  margin-bottom: 15px;
+}
+
+.category .d-flex, .d-flexleft{
+  flex-direction: column;
+}
+
+.img-category{
+  height: 180px;
+  width : 100%;
+}
+
+.pcategoryright, .pcategoryleft {
+  font-size:12px;
+  margin: -5% 5% 10% 5%;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Produits  */
+.shop-products{
+  flex-direction: column;
+  align-items: center;
+}
+
+.product {
+  margin: 0px 20px 20px 20px;
+  width: 100%;
+}
+
+/* Bandeau promotionnel */
+.triangle-left, .triangle-right{
+  display: none;
+}
+
+section .greenbg img{
+  display: none;
+}
+
+.promotion{
+  padding : 10px 5px;
+  width: calc(100% /2);
+}
+
+.greenbg .btn{
+  padding: 10px 20px;
+}
+
+/* Engagements */
+.graybg{
+  padding: 10px 0 20px 0;
+}
+
+.engagement {
+  margin-right: 5px;
+}
+
+.engagement p{
+  font-size: 8px;
+}
+
+
+}

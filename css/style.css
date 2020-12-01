@@ -1,0 +1,421 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dancing Script', cursive;
+  margin: 0;
+}
+
+h1 {
+  font-size: 55px;
+  margin-bottom: 25px;
+  padding: 22px 0px 0px 55px;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #3C523F;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+h5 {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font-size: 5px;
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #999999;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+}
+
+#logo {
+  height: 120px;
+}
+
+.btn {
+  background-color: #FCFCFC;
+  border-radius: 50px; /* permet d'arrondir les bords du bouton */
+  box-shadow: 3px 3px 10px gray;  /* permet d'avoir une ombre sur les bords du bouton */
+  color: #689D71;
+  font-weight: 500;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.center-element {
+  color: #606260;
+  text-align: center;
+}
+
+.greenbg {
+  align-items: center;
+  background-color: rgba(104, 157, 113, 56%);
+  position: relative;
+}
+
+.sr-only {
+  display: none;
+}
+
+/* Navigation  */
+.main-navigation {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-links a {
+  text-transform: uppercase;
+}
+
+.nav-links .active a, .stroke {
+  position: relative;
+}
+
+/* Stroke */
+.stroke:after, .active a:after {
+  background: #689D71;  /* couleur du trait */
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%; /*Permet de faire commencer le trait au milieu*/
+  position: absolute;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.stroke:hover:after, .active a:after {
+  bottom: -15%;
+  left: 15%;
+  right: 15%;
+  width: 70%;
+}
+
+.icons-links:hover {
+  background-color: rgba(255, 209, 189, 88%);
+  border-radius: 50%;
+  padding: 10px 5px;
+}
+
+.main-navigation .container, .main-navigation .nav-links, .logo-link, .icons-links {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  font-size: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.toggle-menu {
+  background-color: white;
+  border: 1px solid #689D71;
+  border-radius: 3px;
+  display: none;
+  padding: 10px;
+}
+
+/* Footer */
+.greenbg .leaf-right {
+  right: 0%;
+  top: -46%;
+}
+
+footer a, footer li {
+  color: #618567;
+  padding-bottom: 10px;
+  transition: 0.5s ease;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer .fab {
+  font-size: 19px;
+}
+
+.logofooter, .letter {
+  position: absolute;
+}
+
+.logofooter {
+  top: -11%;
+  left: 47%;
+}
+
+.letter {
+  left: -3%;
+  top: -4%;
+}
+
+.newsletter {
+  background-color: rgba(255, 253, 253, 29%);
+  margin: 60px 30px;
+  padding: 25px;
+  position: relative;
+  text-align: center;
+  width: calc(100% /2.5);
+}
+
+#newsletter, #submit {
+  outline-style: none;
+}
+
+#newsletter {
+  background: transparent;
+  border: 2px solid white;
+  color: rgba(0, 0, 0, 66%);
+  padding: 10px 25px;
+  margin-bottom: 15px;
+}
+
+#submit {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #618567;
+}
+
+.anchor {
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  z-index: 1;
+}
+
+/* header */
+header {
+  background-image: url("../images/siteheader.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 30px;
+  margin-top: 120px;
+  padding: 40px;
+}
+
+header p {
+  font-size: 20px;
+  padding-left: 55px;
+}
+
+.btn-position {
+  padding-left: 26%;
+  padding-top: 30px;
+}
+
+/* Categories */
+.category {
+  position: relative;
+}
+
+.leaf-left, .leaf-right {
+  position: absolute;
+}
+
+.category .leaf-left {
+  left: 0%;
+  top: 26%;
+}
+
+.category .leaf-right {
+  bottom: -10%;
+  right: 0%;
+}
+
+.pcategoryright, .pcategoryleft {
+  border: solid;
+  border-color: #689D71;
+  height: 150px;
+}
+
+.img-category {
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 350px;
+  width: calc(100% /2);
+}
+
+.d-flexleft {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.pcategoryright, .pcategoryleft {
+  margin-top: 7%;
+  padding: 40px 70px 140px 115px;
+}
+
+/* Permet de mettre le paragraphe et sa bordure de la catégorie à droite */
+.pcategoryright {
+  margin-left: -4%;
+}
+
+/* Permet de mettre le paragraphe et sa bordure de la catégorie à gauche */
+.pcategoryleft {
+  margin-right: -4%;
+}
+
+#makeupcategory {
+  background-image: url("../images/categorymakeup.jpg");
+}
+
+#carecategory {
+  background-image: url("../images/categorycare.jpg");
+}
+
+#accessorycategory {
+  background-image: url("../images/categoryaccessory.jpg");
+}
+
+/* Produits */
+.shop-products {
+  margin: 40px 0px;
+}
+
+.like {
+  color: #689D71;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 28%;
+  top: 14%;
+}
+
+.product {
+  background-color: rgba(231, 162, 133, 16%);
+  border-radius: 50%;
+  margin: 0 15px;
+  padding: 25px;
+  position: relative;
+  text-align: center;
+  width: calc(100%/3);
+}
+
+.product button p {
+  color: #999999;
+  font-size: 11px;
+}
+
+.product:hover {
+  background-color: rgba(255, 209, 189, 88%);
+  box-shadow: 3px 3px 20px #C1BCBC;
+  transition: all 0.25s ease-in-out;
+}
+
+.product button {
+  background: none;
+  border: none;
+  margin-top: 10px;
+  outline-style: none;
+}
+
+/* Bandeau promotionnel */
+.greenbg .leaf-left {
+  left: 0%;
+  top: 24%;
+}
+
+/* Triangle blanc sur les côtés du bandeau */
+.triangle-left, .triangle-right {
+  border: 100px solid transparent;
+}
+
+.triangle-left {
+  border-left: 42px solid white;
+}
+
+.triangle-right {
+  border-right: 42px solid white;
+}
+
+.greenbg .container {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.promotion span {
+  color: #F48455;
+}
+
+.promotion {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Engagements */
+.graybg {
+  background-color: rgba(229, 229, 229, 54%);
+  margin-top: 40px;
+  padding: 15px;
+  padding-bottom: 45px;
+}
+
+.graybg .d-flex {
+  justify-content: space-evenly;
+}
